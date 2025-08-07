@@ -1,5 +1,6 @@
 import { ChevronRightIcon } from "lucide-react";
 import { Trash } from "lucide-react";
+import { Check } from "lucide-react";
 
 function Tasks({ tasks, onTaskClick, onDeleteTask }) {
     return (
@@ -8,10 +9,11 @@ function Tasks({ tasks, onTaskClick, onDeleteTask }) {
                 <li key={task.id} className="flex gap-2">
                     <button 
                         onClick={() => onTaskClick(task.id)} 
-                        className={`bg-slate-400 text-left w-full text-white p-2 rounded-md ${
+                        className={`bg-slate-400 flex gap-1 text-left w-full text-white p-2 rounded-md ${
                             task.isCompleted && 'line-through'
                         }`}
                     >
+                            {task.isCompleted && <Check />}
                             {task.title}
                     </button>
                     <button className="bg-slate-400 p-2 rounded-md text-white">

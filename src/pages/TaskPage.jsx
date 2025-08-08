@@ -7,8 +7,14 @@ function TaskPage() {
 
     return (
         <div className="h-screen w-screen bg-blue-500 p-6">
-            <h1>{title}</h1>
-            <h1>{description}</h1>
+            <div className="w-[500px] space-y-4">
+                <h1 className="text-3xl text-blue-100 font-bold text-center">Detalhes da Tarefa</h1>
+                
+                <div className="bg-blue-200 p-4 rounded-md">
+                    <h2 className="text-xl text-blue-600 font-bold">{title}</h2>
+                    <p className="text-blue-600">{description}</p>
+                </div>
+            </div>
         </div>
     );
 }

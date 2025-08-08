@@ -9,7 +9,7 @@ function AddTask({onAddTaskSubmit}) {
     return (
         <div className="space-y-4 p-6 bg-blue-200 rounded-md shadow flex flex-col">
             <input 
-                className="border border-blue-300 rounded-md outline-slate-400 px-4 py-2" 
+                className="border border-blue-300 rounded-md outline-blue-400 px-4 py-2" 
                 type="text" 
                 placeholder="Digite o titulo da tarefa" 
                 value={title}
@@ -18,7 +18,7 @@ function AddTask({onAddTaskSubmit}) {
                 }}
             />
             <input 
-                className="border border-blue-300 rounded-md outline-slate-400 px-4 py-2" 
+                className="border border-blue-300 rounded-md outline-blue-400 px-4 py-2" 
                 type="text" 
                 placeholder="Digite a descrição da tarefa" 
                 value={description}
